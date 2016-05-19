@@ -4,6 +4,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Html5</title>
 	<meta charset="utf-8" />
+    <style>
+        header,footer,canvas,article,aside,section{
+            display:block;
+        }
+    </style>
+    <script>
+        document.createElement('header');
+        document.createElement('footer');
+        document.createElement('nav');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('section');
+    </script>
 </head>
 <body>
      <header>
@@ -15,21 +28,25 @@
              </ul>
          </nav>
      </header>
-    <article>
-        <h2><code>nav</code> Isn't for <em>All</em> Links</h2>
-        <p>
-            Though the <code>nav</code> element often contains links,that doesn't mean
-            that <em>all</em> links on a site need <code>nav</code>.
-        </p>
-    </article>
-    <article>
-        <h2>You're Got the <code>DOCTYPE</code>. Now What?</h2>
-        <p>
-            HTML5 isn't an all or nothing proposition.You can Pick and choose what works best for you.So once you have the <code>
-                DOCTYPE
-            </code>in place,you should explore.
-        </p>
-    </article>
+    <section>
+        <h6>Most Recent Blog Posts</h6>
+        <article>
+            <h1><code>nav</code> Isn't for <em>All</em> Links</h1>
+            <p>
+                Though the <code>nav</code> element often contains links,that doesn't mean
+                that <em>all</em> links on a site need <code>nav</code>.
+            </p>
+        </article>
+        <article>
+            <h1>You're Got the <code>DOCTYPE</code>. Now What?</h1>
+            <p>
+                HTML5 isn't an all or nothing proposition.You can Pick and choose what works best for you.So once you have the <code>
+                    DOCTYPE
+                </code>in place,you should explore.
+            </p>
+        </article>
+    </section>
+    
     <aside>
         <h2>HTML5 Elsewhere</h2>
         <p>Feed your HTML5 fix with resources from our partners:</p>

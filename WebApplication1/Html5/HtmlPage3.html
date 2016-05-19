@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>标题</title>
+	<meta charset="utf-8" />
+    <style>
+        header {
+            width:600px;
+            height:150px;
+            background-color:#ccffff;
+            border:2px solid #66cc99;
+            padding:10px;
+        }
+
+        nav {
+            width:100%;
+            float:left;
+            list-style:none;
+        }
+
+         nav li {
+             float:left;
+             padding-right:20px;
+         }
+
+        .no-audio #audio {
+              display:none;
+        }
+
+        .audio #audio input[type="button"] {
+              width:45px;
+              height:29px;
+              background:url(../Img/信息.png);
+              border:1px solid #000;
+              float:left;
+              margin-right:10px;
+        }
+
+        .audio #error {
+              display:none;
+        }
+
+        .no-audio #error-box {
+              background-color:#ffffcc;
+              padding:1px 10px;
+              color:#000;
+              border:5px solid #ffff66;
+        }
+
+        .no-audio #error-box a {
+            
+              color:#333;
+        }
+    </style>
+    <script>
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("footer");
+    </script>
+    <script src="../Scripts/modernizr-2.6.2.js"></script>
+    <script>
+        if(Modernizr.audio)
+        {
+            function palyPause() {
+                var myAudio = document.getElementsByTagName('audio')[0];
+                if (myAudio.paused) {
+                    myAudio.play();
+                }
+                else {
+                    myAudio.pause();
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Riddles of the Sphinx</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/contact/">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="../Img/登录.png" alt="Veil &amp; Subdue: Courtship of the Black Sultan" />
+    <div id="caption">
+        <div id="audio">
+            <audio controls="controls">
+                <source src="../Audio/%e7%94%b5%e5%bd%b1%e5%8e%9f%e5%a3%b0%20-%20%e4%b8%80%e7%94%9f%e6%89%80%e7%88%b1.mp3" type="audio/mpeg" />
+            </audio>
+            <p>
+                <input type="button" onclick="palyPause()" value="播放/暂停" tabindex="0" />
+            </p>
+        </div>
+        <div id="error">
+            <p>&ldquo;Turn the Page&rdquo;/ <em>Veil &amp; Subdue</em> / Paul Ramey</p>
+            <div id="error-box">
+                <p>
+                    Too bad! This browser does not support the audio features on this page.
+                    Might I suggest installing the latest version of your browser?
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

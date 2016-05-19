@@ -155,13 +155,25 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Audio\电影原声 - 一生所爱.mp3" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Html5\HtmlPage2.html" />
     <Content Include="Html5\HtmlPage1.html" />
+    <Content Include="Html5\HtmlPage3.html" />
+    <Content Include="Img\主界面图1_PxCook.png" />
+    <Content Include="Img\侧面按钮.png" />
+    <Content Include="Img\信息.png" />
+    <Content Include="Img\信息置灰.png" />
+    <Content Include="Img\提问图标.png" />
+    <Content Include="Img\提问图标置灰.png" />
+    <Content Include="Img\未读信息.png" />
+    <Content Include="Img\登录.png" />
+    <Content Include="Img\登录置灰.png" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -177,10 +189,12 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-1.6.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Video\x0011uur7dq.p302.1.mp4" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
