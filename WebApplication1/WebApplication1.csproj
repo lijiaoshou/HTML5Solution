@@ -165,6 +165,10 @@
     <Content Include="Html5\HtmlPage2.html" />
     <Content Include="Html5\HtmlPage1.html" />
     <Content Include="Html5\HtmlPage3.html" />
+    <Content Include="Html5\HtmlPage4.html" />
+    <Content Include="Html5\HtmlPage5.html" />
+    <Content Include="Html5\HtmlPage6.html" />
+    <Content Include="Html5\HtmlPage7.html" />
     <Content Include="Img\主界面图1_PxCook.png" />
     <Content Include="Img\侧面按钮.png" />
     <Content Include="Img\信息.png" />

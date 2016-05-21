@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+     input[type="search"]{
+        border-radius:10px
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p><label>Search <input type="search" name="query" /></label></p>
+        <p><button type="submit">Submit</button></p>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            <p><label>E-mail address <input type="email" name="email" /></label></p>
+            <p><label>Web site <input type="url" name="website" /></label></p>
+            <p><label>Telephone number <input type="tel" name="phone" /></label></p>
+        </fieldset>
+        <p><button type="submit">Submit</button></p>
+
+        <p><label>Appointment Date and Time <input type="datetime-local" name="dateAndTime" /></label></p>
+        <p><button type="submit">Submit</button></p>
+
+        <fieldset>
+            <legend>Appointment Request</legend>
+            <p><label>Date <input type="date" name="date" /></label></p>
+            <p><label>Time <input type="time" name="time"/></label></p>
+        </fieldset>
+        <p><button type="submit">Submit</button></p>
+
+        <p><label>Quantity <input type="number" name="quantity"/></label></p>
+        <p><button type="submit">Submit</button></p>
+
+        <p><label>Volume <input type="range" name="volume" min="0" max="10" step=".5" value="5" /></label></p>
+
+        <p><label>Background color <input type="color" name="bg" /></label></p>
+        <p><label>Foreground color <input type="color" name="fg" /></label></p>
+        <p><button type="submit">Submit</button></p>
+
+        <p><label>Donation amount <input type="text" name="donation" list="donations" /></label></p>
+        <datalist id="donations">
+            <option value="10.00">10.00</option>
+            <option value="25.00">25.00</option>
+            <option value="50.00">50.00</option>
+        </datalist>
+
+    </form>
+</body>
+</html>
