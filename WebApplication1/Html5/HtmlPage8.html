@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <audio controls preload="metadata"  loop><!--autoplay-->
+        <source src="../Audio/电影原声 - 一生所爱.mp3" />
+        Download <a href="../Audio/电影原声 - 一生所爱.mp3">episode 42 of Learning to Love HTML5 </a>
+    </audio>
+    <button title="Paly at 30 seconds" onclick="playAt(30);">30 seconds</button>
+    <button title="Stop Audio" onclick="stopAudio();">Stop Audio</button>
+
+    <script>
+        function playAt(seconds) {
+            var audio = document.getElementsByTagName("audio")[0];
+            audio.currentTime = seconds;
+            audio.play();
+        }
+        function stopAudio() {
+            var audio = document.getElementsByTagName("audio")[0];
+            audio.currentTime = 0;
+            audio.pause();
+        }
+    </script>
+
+    <audio src="../Audio/电影原声 - 一生所爱.mp3"></audio>
+    <canvas width="512" height="100"></canvas>
+    <button title="Generate Waveform" onclick="genWave();">Generate Waveform</button>
+
+    <script>
+        function genWave() {
+            var audio = document.getElementsByTagName("audio")[0];
+            var canvas = document.getElementsByTagName("canvas")[0];
+            var context = canvas.getContext('2d');
+            audio.addEventListener("MozAudioAvailable", buildWave, false);
+            function buildWave(event) {
+                var channels = audio.mozChannels;;
+                var frameBufferLength = audio.mozFrameBufferLength;
+                var fbData = event.frameBuffer;
+                var stepInc = (frameBufferLength / channels) / canvas.width;
+                var waveAmp = canvas.height / 2;
+                canvas.width = canvas.width;
+                context.beginPath();
+                context.moveTo(0, waveAmp - fbData[0] * waveAmp);
+                for (var i = 1; i < canvas.width; i++)
+                {
+                    context.lineTo(1,waveAmp-fbData[i*stepInc]*waveAmp);
+                }
+                context.strokeStyle = "#fff";
+                context.stroke();
+            }
+            audio.play();
+        }
+    </script>
+</body>
+</html>
